@@ -41,7 +41,7 @@ test("Sum is not equal to 15", async (t) => {
     });
   });
 
-  assert.notStrictEqual(sum, 20);
+  assert.notStrictEqual(sum, 15);
   //Delete the mock file
   fs.unlinkSync(mockFileName);
 });
