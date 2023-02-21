@@ -67,7 +67,7 @@ test("Text file is not exist", async (t) => {
   }
 });
 
-test("If file is empty return specific message", async (t) => {
+test("If file is empty or does not have number return specific message", async (t) => {
   // Create a mock file with some numbers
   mockFileName = "test4.txt";
   mockFileContent = "";
@@ -82,7 +82,7 @@ test("If file is empty return specific message", async (t) => {
     });
   });
 
-  assert.strictEqual(sum, "Please provide values");
+  assert.strictEqual(sum, "Please provide apporiate format");
   //Delete the mock file
   fs.unlinkSync(mockFileName);
 });

@@ -33,7 +33,7 @@ const add = async (callback) => {
     // When the entire file has been processed, output the total sum
     readInterface.on("close", () => {
       if (sum === 0) {
-        callback("Please provide values");
+        callback("Please provide apporiate format");
       } else {
         callback(sum);
       }
